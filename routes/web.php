@@ -15,7 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/simpletest1','simpletest@testme');
+Route::get('/simpletest7','simpletest@testme');
+
+
+Route::get('/admintest','AdminController@dashboard');
+
 
 Route::get('role',[
    'middleware' => 'Role:editor',
@@ -42,8 +46,7 @@ Route::get('/test7', function(){
 
 Route::get('/testview', function()
 {
-$data=array("naiimit","garg");
+$data=array("namit","garg");
    return view('test')->with('data',$data);
-
 
 });
