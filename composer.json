@@ -6,11 +6,16 @@
     "type": "project",
     "require": {
         "php": ">=5.6.4",
+        "guzzlehttp/guzzle": "~6.0",
         "illuminate/html": "^5.0",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
-        "laravelcollective/html": "^5.4"
+        "laravelcollective/html": "^5.4",
+        "nesbot/carbon": "^1.22",
+        "pragmarx/zipcode": "^1.5",
+        "symfony/psr-http-message-bridge": "^1.0"
     },
+	"symfony/psr-http-message-bridge": "0.2",
     "require-dev": {
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",

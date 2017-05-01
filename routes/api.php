@@ -16,3 +16,20 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+
+
+Route::get('apinames', function()
+{
+    return array(
+      1 => "John",
+      2 => "Mary",
+      3 => "Steven"
+    );
+});
+
+
+Route::get('/webnames', 'WebController@index');
+
+Route::get('/webnames/{id}', 'WebController@singleuser');
