@@ -16,7 +16,10 @@ class middlewaretest
     public function handle($request, Closure $next, $role)
     {
        
-        echo " mine Role:".$role;
+        echo " mine Role:".$role; 
+
+        echo "\n" ;
         return $next($request);
+
     }
 }

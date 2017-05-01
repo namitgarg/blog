@@ -12,6 +12,7 @@ class simpletest extends Controller
     {
     	echo "s2w";
     	echo"<br/>";
+      abort(404);
     	        $users = DB::select('select * from student_details ');
 
     	      //  print_r($users);
@@ -27,13 +28,15 @@ class simpletest extends Controller
 
 
 $users4= DB::table('student_details')->where('ID','>=','1')->get();
-print_r($users4);
+//print_r($users4);
 
 foreach ($users4 as $values)
 {
 	echo $values->ID;
 	echo"<br/>";
 	echo $values->Name;
+  echo"<br/>";
+  echo"<br/>";
 }
 
     }
